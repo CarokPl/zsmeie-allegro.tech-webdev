@@ -1,4 +1,4 @@
-# WYMAGANIA
+# Wymagania
 * nodejs, npm
 * gruntjs
 
