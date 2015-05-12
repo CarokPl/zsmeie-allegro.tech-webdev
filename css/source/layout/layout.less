@@ -5,11 +5,22 @@ body {
     color: #444;
 }
 
-.logo {
+.header {
     margin-top: 26px;
     text-shadow: 2px 3px 0px #ffffff;
-    .fa-cube, .allegro {
-        color: #ff7100
+    .logo {
+        float: left;
+        margin-top: 0;
+        .fa-cube, .allegro {
+            color: #ff7100
+        }
+    }
+    .toEnd {
+        float: right;
+        font-size: 30px;
+        i.fa {
+            color: #ff7100;
+        }
     }
 }
 
@@ -24,8 +35,24 @@ hr {
     border-top-color: rgba(255, 180, 0, 0.50);
 }
 
+@media all and (max-width: 550px) {
+    .header {
+        .logo {
+            font-size: 30px
+        }
+        .toEnd {
+            font-size: 28px;
+        }
+    }
+}
+
 @media all and (max-width: 480px) {
-    .logo {
-        font-size: 22px
+    .header {
+        .logo {
+            font-size: 22px
+        }
+        .toEnd {
+            font-size: 21px;
+        }
     }
 }

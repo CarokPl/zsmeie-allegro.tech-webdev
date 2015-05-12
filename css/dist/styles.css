@@ -8356,12 +8356,23 @@ body {
   background: #f7f7f7 url('/zsmeie/images/bg.png');
   color: #444;
 }
-.logo {
+.header {
   margin-top: 26px;
   text-shadow: 2px 3px 0px #ffffff;
 }
-.logo .fa-cube,
-.logo .allegro {
+.header .logo {
+  float: left;
+  margin-top: 0;
+}
+.header .logo .fa-cube,
+.header .logo .allegro {
+  color: #ff7100;
+}
+.header .toEnd {
+  float: right;
+  font-size: 30px;
+}
+.header .toEnd i.fa {
   color: #ff7100;
 }
 .title {
@@ -8373,9 +8384,20 @@ hr {
   margin-bottom: 10px;
   border-top-color: rgba(255, 180, 0, 0.5);
 }
+@media all and (max-width: 550px) {
+  .header .logo {
+    font-size: 30px;
+  }
+  .header .toEnd {
+    font-size: 28px;
+  }
+}
 @media all and (max-width: 480px) {
-  .logo {
+  .header .logo {
     font-size: 22px;
+  }
+  .header .toEnd {
+    font-size: 21px;
   }
 }
 .messages-holder {
@@ -8404,19 +8426,26 @@ hr {
 }
 .message .current-lesson .header {
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 25px;
+  color: #ff7100;
+  font-weight: 700;
+  text-shadow: 1px 2px 1px #aaa;
 }
 .message .current-lesson .lesson {
   font-size: 17px;
   font-weight: 700;
+  text-shadow: 1px 2px 1px #d5d5d5;
 }
 .message .current-lesson .lesson.free {
-  line-height: 81px;
+  line-height: 85px;
 }
 .message .current-lesson .lesson.next {
   display: block;
   font-size: 15px;
   color: #555;
+}
+.message .current-lesson .lesson.next .teacher {
+  font-size: 12px;
 }
 .message .current-lesson .lesson.replacement {
   color: #ff7100;
